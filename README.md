@@ -1,6 +1,6 @@
 # Embedded Developer Trial Day
 
-Welcome, Toby to your trial work day! This assignment is designed to evaluate your skills in embedded systems development, particularly in C/C++ programming.
+Welcome, Marcel to your trial work day! This assignment is designed to evaluate your skills in embedded systems development, particularly in C/C++ programming.
 
 ## Overview
 
@@ -12,10 +12,10 @@ The trial day is structured into several steps:
 
 1. **Review the Pull Request (1h):**
 
-   - Analyze the existing pull request on the [repository](https://github.com/hirtfre/GE.Trial.RingBuffer)
+   - Analyze the existing pull request on the [repository](https://github.com/hirtfre/ge-trial-ring-buffer)
    - Identify and document any issues, inconsistencies, or areas for improvement in the code
    - The current implementation only supports `uint16_t`, this is a technical debt of the original author which can be ignored for the review
-   - Discuss your findings with your software architect
+   - Discuss your findings with your team lead
 
 2. **Fix identified issues (1h):**
 
@@ -28,7 +28,7 @@ The trial day is structured into several steps:
    - Change the Ring Buffer so that it supports `uint8_t`, `uint16_t`, `uint32_t` and `uint64_t`, this may include changes to `RingBuffer.cpp` (see @todo)
    - Create a feature branch `feature/technical-debt` to work in
    - Try applying the TDD principles you learned today for your changes
-   - Create a Pull Request into the `develop` branch and inform your software architect
+   - Create a Pull Request into the `develop` branch and inform your team lead
    - _Bonus_ Draw an UML class diagram of the RingBuffer module and its dependencies (`doc/diagram/RingBuffer.uxf`)
 
 4. **Integrate into Executable (1h):**
@@ -77,16 +77,16 @@ You have access to two GitHub repositories:
 1. **Clone the Ring Buffer Repository:**
 
 ```bash
-git git@github.com:hirtfre/GE.Trial.RingBuffer.git
-cd GE.Trial.Ringbuffer
+git clone https://github.com/hirtfre/ge-trial-ring-buffer.git
+cd ge-trial-ring-buffer
 git submodule update --init
 ```
 
 2. **Clone the ESP32 Executable Repository:**
 
 ```bash
-git clone git@github.com:hirtfre/GE.Trial.Executable
-cd GE.Trial.Executable
+git clone https://github.com/hirtfre/ge-trial-executable.git
+cd ge-trial-executable
 git submodule update --init
 ```
 
