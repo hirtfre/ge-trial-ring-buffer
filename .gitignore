@@ -1,0 +1,6 @@
+test/build
+src/ModuleId.h
+src/GpioTypes.h
+src/TimerTypes.h
+src/SpiTypes.h
+src/ClockOutputTypes.h
