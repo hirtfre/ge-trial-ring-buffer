@@ -33,8 +33,8 @@ The trial day is structured into several steps:
 
 4. **Integrate into Executable (1h):**
 
-   - Create a feature branch `feature/ring-buffer` of the [executable](https://github.com/hirtfre/GE.Trial.Executable)
-   - Integrate the Ring Buffer into the [executable](https://github.com/hirtfre/GE.Trial.Executable)
+   - Create a feature branch `feature/ring-buffer` of the [executable](https://github.com/hirtfre/ge-trial-executable)
+   - Integrate the Ring Buffer into the [executable](https://github.com/hirtfre/ge-trial-executable)
    - Test the executable on the target system
    - Change `main\app_main.cpp` so that:
      - Random values get added to a Ring Buffer every 500 ms
@@ -65,12 +65,12 @@ You have access to two GitHub repositories:
 1. **Ring Buffer Repository:**
 
    - Contains the ring buffer implementation and a pull request that you need to review.
-   - Repository URL: https://github.com/hirtfre/GE.Trial.RingBuffer
+   - Repository URL: https://github.com/hirtfre/ge-trial-ring-buffer
 
 2. **ESP32 Executable Repository:**
 
    - Contains the executable project that uses the ring buffer as a submodule
-   - Repository URL: https://github.com/hirtfre/GE.Trial.Executable
+   - Repository URL: https://github.com/hirtfre/ge-trial-executable
 
 ### Cloning the Repositories
 
