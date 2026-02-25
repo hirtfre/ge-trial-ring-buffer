@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "matepek.vscode-catch2-test-adapter",
+    "akiramiyakoda.cppincludeguard",
+    "jacqueslucke.gcov-viewer",
+    "theumletteam.umlet",
+    "ms-vscode.cpptools-extension-pack"
+  ]
+}

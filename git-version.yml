@@ -1,0 +1,5 @@
+# default configuration can be looked at:
+# https://gitversion.net/docs/reference/configuration#snippet-/docs/workflows/GitFlow/v1.yml
+
+workflow: GitFlow/v1
+mode: ContinuousDelivery
