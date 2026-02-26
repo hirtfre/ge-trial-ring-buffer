@@ -1,6 +1,6 @@
 # Embedded Developer Trial Day
 
-Welcome, Marcel to your trial work day! This assignment is designed to evaluate your skills in embedded systems development, particularly in C/C++ programming.
+Welcome, Philippe to your trial work day! This assignment is designed to evaluate your skills in embedded systems development, particularly in C/C++ programming.
 
 ## Overview
 
