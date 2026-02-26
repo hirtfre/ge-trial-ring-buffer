@@ -1,6 +1,6 @@
+#include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
-#include <stdbool.h>
 
 #define BUFFER_CAPACITY 16
 
@@ -15,13 +15,28 @@ typedef struct
     int *array;
     int head;
     int tail;
-    // int maxSize;
 } RB_t;
 
 RB_t *RB_InitBuffer(size_t elementSize);
+
+/*
+ * Return: true if insert element is successful 
+ */
 bool RB_InsertElement(RB_t *const me, uint16_t element);
+
+/*
+ * Return: true if remove element is successful 
+ */
 bool RB_RemoveElement(RB_t *const me, uint16_t *element);
+
+/*
+ * Return: true if buffer is full
+ */
 bool RB_IsFull(RB_t *const me);
+
+/*
+ * Return: true if buffer is empty 
+ */
 bool RB_IsEmpty(RB_t *const me);
 void DestroyBuffer(RB_t *const me);
 

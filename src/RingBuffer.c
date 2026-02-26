@@ -7,7 +7,7 @@ RB_t *RB_InitBuffer(size_t elementSize)
     RB_t *me = MEM_Calloc(1, sizeof(RB_t));
 
     me->array = (int *)MEM_Calloc(1, BUFFER_CAPACITY * elementSize);
-    me->capacity = BUFFER_CAPACITY - 1;
+    me->capacity = BUFFER_CAPACITY;
     me->head = 0;
     me->tail = 0;
     me->count = 0;
@@ -17,11 +17,6 @@ RB_t *RB_InitBuffer(size_t elementSize)
 
 bool RB_InsertElement(RB_t *const me, uint16_t element)
 {
-    if (RB_IsFull(me))
-    {
-        return false; // Buffer is full
-    }
-
     me->array[me->head] = element;
     me->head = (me->head + 1) % me->capacity;
     me->count++;
@@ -51,7 +46,7 @@ bool RB_RemoveElement(RB_t *const me, uint16_t *element)
 
 bool RB_IsFull(RB_t *me)
 {
-    return ((me->head + 1) % me->capacity) == me->tail;
+    return me->head == me->tail;
 }
 
 bool RB_IsEmpty(RB_t *me)
